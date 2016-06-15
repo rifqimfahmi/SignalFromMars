@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.JourneyActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/journeyImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/page0"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You deftly land your ship near where the distress signal originated. You didn&apos;t notice anything strange on your fly-by, but there is a cave in front of you. Behind you is an abandoned rover from the early 21st century."
+        android:id="@+id/journeyTextView"
+        android:layout_below="@+id/journeyImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue home to earth"
+        android:id="@+id/buttonChoice2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonChoice1"
+        android:layout_alignStart="@+id/buttonChoice1"
+        android:background="#ffffff"
+        android:textColor="#3a8aec"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop and investigate"
+        android:id="@+id/buttonChoice1"
+        android:layout_above="@+id/buttonChoice2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:textColor="#3a8aec"/>
+</RelativeLayout>
